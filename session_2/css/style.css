@@ -5,33 +5,45 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    text-align: center;
+    padding: 8%;
+    background-image: linear-gradient(to right, rgb(178, 142, 232),rgb(66, 80, 142));
+}
+.container{
+    width: 65%;
+}
 div{
     display: inline-block;
     width: 50%;
     height: 450px;
-    padding: 20px;
+    padding: 5%;
     vertical-align: middle;
 }
 .one{
     background-color: #02b4d2;
     color: white;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     text-align: center;
+    padding-top: 15%;
 }
 .one h2{
-    margin-top: 80px;
-    margin-bottom: 25px;
+    margin-bottom: 10%;
 }
 .one p{
-    margin-bottom: 40px;
+    margin-bottom: 10%;
 }
 .two{
-    padding: 40px;
+    padding: 5%;
     text-align: center;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .two h2{
     text-align: center;
+    margin-bottom: 10%
 }
 .two h5{
     text-align: left;
@@ -40,9 +52,9 @@ div{
 .two input,
 .two textarea{
     display: block;
-    margin: 10px;
+    margin: 3%;
     width: 90%;
-    padding: 10px;
+    padding: 3%;
     background-color: #EEE;
 }
 .two textarea{
@@ -51,9 +63,9 @@ div{
 .two input[type="submit"]{
     background-color: #02b4d2;
     color: white;
-    width: 60%;
+    width: 40%;
     margin: auto;
-    padding: 10px;
+    padding: 3%;
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
