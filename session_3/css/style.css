@@ -1,0 +1,126 @@
+/* reset section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* Global style*/
+.container{
+    width: 80%;
+    margin: auto;
+}
+.white-text{
+    color: white;
+}
+.orange-text{
+    color: orange;
+}
+p{
+    color: #CCC;
+}
+.bigger-text{
+    font-size: 400%;
+}
+.clear{
+    clear: both;
+}
+/* Custom style*/
+/* Start Nav */
+nav{
+    background-color: black;
+    padding: 20px 0;
+}
+nav  .container div{
+    display: inline-block;
+}
+.logo span{
+    font-weight: lighter;
+}
+.links{
+    float: right;
+}
+.links li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.links li a{
+    color: #adadad;
+}
+/* End Nav */
+/* Start Main-Section */
+section{
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 100px 0 190px;
+}
+.one,
+.two{
+    display: inline-block;
+    width: 40%;
+}
+.one{
+    float: left;
+    color: white;
+}
+.one .text h4{
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin: 15px 0;
+}
+.one .text hr{
+    width: 20%;
+    margin: 35px 0;
+    border: 1px solid white;
+}
+.one .text p{
+    margin-bottom: 35px;
+}
+.one button{
+    padding: 10px 25px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-weight: bold;
+}
+.two{
+    float: right;
+    background-color: white;
+    text-align: center;
+    width: 30%;
+}
+.two h2{
+    background-color: #EEE;
+    padding: 15px;
+}
+.two input{
+    padding: 10px;
+    border-color: transparent;
+    border-bottom-color: inherit;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.two input[type="submit"]{
+    background-color: orange;
+    color: white;
+    border-color: transparent;
+    width: 100%;
+    font-size: large;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+/* End Main-Section */
