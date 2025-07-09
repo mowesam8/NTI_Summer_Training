@@ -1,0 +1,457 @@
+/* reset style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* Variables */
+:root{
+    --main-color:#ff8b38;
+    --secondary-color: #f5f5f5;
+    --paragraph-color: #adadad;
+    --main-padding: 100px;
+}
+/* Global style*/
+.html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.white-text{
+    color: white;
+}
+.orange-text{
+    color: var(--main-color);
+}
+p{
+    color: var(--paragraph-color);
+}
+.bigger-text{
+    font-size: 400%;
+}
+.clear{
+    clear: both;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 7% 0 ;
+}
+.glassy-button{
+    padding: 10px 30px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-weight: 600;
+    font-size: large;
+}
+.special-heading{
+    text-align: center;
+}
+.special-heading h2{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 2rem;
+}
+.special-heading hr{
+    position: absolute;
+    left: calc(50% - 40px);
+}
+.special-heading p{
+    margin: 5% 0;
+}
+/* Custom style*/
+/* Start Nav */
+nav{
+    background-color: black;
+    padding: 20px 0;
+}
+nav  .container div{
+    display: inline-block;
+}
+.logo span{
+    font-weight: lighter;
+}
+.links{
+    float: right;
+}
+.links li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.links li a{
+    color: #adadad;
+}
+hr{
+    width: 80px;
+    margin: 30px 0;
+    border: 1px solid var(--main-color);
+}
+/* End Nav */
+/* Start Main-Section */
+section{
+    background-image: url(../images/stylish.jpg);
+    background-size: cover;
+
+}
+.one,
+.two{
+    display: inline-block;
+    width: 40%;
+}
+.one{
+    float: left;
+    color: white;
+}
+.one .text h4{
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin: 15px 0;
+}
+.one .text hr{
+    margin: 40px 0;
+    border-color: white;
+}
+.one .text p{
+    margin-bottom: 35px;
+}
+.two{
+    float: right;
+    background-color: white;
+    text-align: center;
+    width: 30%;
+}
+.two h2{
+    background-color: #eaeaea;
+    padding: 15px;
+}
+.two input{
+    padding: 10px;
+    border-color: transparent;
+    border-bottom-color: inherit;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.two input[type="submit"]{
+    background-color: var(--main-color);
+    color: white;
+    border-color: transparent;
+    width: 100%;
+    font-size: large;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+/* End Main-Section */
+/* Start Social Section */
+.social{
+    background-color: white;
+    box-shadow: 0 2px 5px #aaaaaa91;
+    margin-bottom: 5px;
+}
+.social .container div{
+    display: inline-block;
+    vertical-align: top;
+}
+.social-text{
+    width: 35%;
+    padding: 20px 0;
+}
+.social-icons{
+    width: 60%;
+    padding: 30px 0;
+    float: right;
+    text-align: right;
+}
+.social-icons i{
+    font-size: 35px;
+    color: #CCC;
+    margin-left: 5%;
+}
+/* End Social Section */
+/* Start Tabs Section */
+.tabs-section{
+    background-color: var(--secondary-color);
+    padding: var(--main-padding) 0;
+}
+.tabs-section .tabs-tabs{
+    float: left;
+    width: 10%;
+}
+.tabs-tabs div{
+    background-color: #333;
+    text-align: center;
+    padding: 40% 0;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+.tabs-tabs .active{
+    background-color: var(--main-color);
+}
+.tabs-text{
+    width: 45%;
+    float: left;
+    margin-left: 8%;
+}
+.tabs-text h3{
+    margin-bottom: 10%;
+}
+.tabs-text p{
+    margin-bottom: 5%;
+}
+.tabs-text button{
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 2.5% 7%;
+    border: none;
+    margin-top: 5%;
+}
+.tabs-pic{
+    float: right;
+    width: 30%;
+    
+}
+.tabs-pic .reflected-image{
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid black;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(0,0,0,0.5));
+}
+/* End Tabs Section */
+/* Start Sub Section */
+.sub-section{
+    padding: var(--main-padding) 0;
+}
+.sub-pic{
+    float: left;
+    width: 40%;
+    margin-top: 80px;
+    box-shadow: 0 0 15px;
+}
+.sub-pic img{
+    width: 100%;
+    display: block;
+}
+.sub-text{
+    width: 50%;
+    float: right;
+}
+.sub-card{
+    margin-top: 8%;
+}
+
+.sub-card-icon{
+    float: left;
+    color: var(--main-color);
+    width:50px;
+    height: 50px;
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid ;
+    margin-top: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.sub-card-text{
+    float: right;
+    width: 70%;
+}
+.sub-card-text p{
+    margin-top: 5%;
+}
+/* End Sub Section */
+/* Start Pricing Section */
+.pricing-section{
+    padding: var(--main-padding ) 0;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+.pricing-section .pricing-plan{
+    position: relative;
+    height: 600px;
+}
+.pricing-section .price-card{
+    position: absolute;
+    bottom: 0;
+}
+.pricing-section .price-card{
+    float: left;
+    width: 30%;
+}
+.price-card div{
+    background-color: #333;
+    color: white;
+}
+.price-card h3{
+    padding: 5% 0;
+    border-bottom: 1px solid var(--secondary-color);
+}
+.price-card .price{
+    padding: 5% 0;
+}
+.price-card .price h4{
+    font-size: 2rem;
+}
+.price-card .price sup,
+.price-card .price span{
+    font-size: 4rem;
+}
+.price-card  i{
+    display: block;
+    padding-bottom: 5%;
+}
+.price-card ul{
+    background-color: white;
+    border-top: 5px solid var(--main-color);
+}
+.price-card ul li{
+    padding: 5% 0;
+    color: #aaa;
+    border-bottom: 2px solid var(--secondary-color);
+}
+.basic{
+    left: 0;
+}
+.professional{
+    left: calc( (10%)/2 + 30%);
+}
+.professional ul{
+    border: none;
+}
+.professional ul .special{
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+}
+.enterprise{
+    right: 0;
+}
+/* End Pricing Section */
+/* Start Customers Section */
+.customers-section{
+    padding: var(--main-padding) 0;
+}
+.customers-section .profile{
+    position: relative;
+}
+.customers-section .customer-card{
+    width: 30%;
+    position: absolute;
+}
+.customers-section .photographer{
+    right: 0;
+}
+.customers-section .freelancer{
+    left: 35%;
+}
+.customer-card-text{
+    padding: 10%;
+    background-color: var(--secondary-color);
+    position: relative;
+}
+.customer-card-text::after{
+    content: '';
+    position: absolute;
+    border: 15px solid transparent;
+    border-top-color: var(--secondary-color);
+    bottom: -30px;
+    left: 6.5%;
+}
+.profile-box{
+    margin-top: 6%;
+}
+.profile-box div{
+    float: left;
+}
+.profile-box .profile-pic{
+    width: 20%;
+    margin-right: 5%;
+}
+.profile-box img{
+    width: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* End Customers Section */
+/* Start Stylish Section */
+.stylish-section{
+    background-image: url(../images/stylish.jpg);
+    background-size: cover;
+    color: white;
+    margin-top: 20%;
+    text-align: center;
+}
+/* End Stylish Section */
+/* Start Contact Section */
+.contact-section{
+    padding: var(--main-padding) 0;
+    text-align: center;
+}
+.contact-section .contact-form{
+    height: 100px;
+    margin-bottom: 5%;
+}
+.contact-form div{
+    float: left;
+    width: 40%;
+}
+.contact-form input{
+    padding: 2%;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin: bottom 3%;;
+}
+.contact-form .message{
+    float: right;
+}
+.contact-form .message textarea{
+    
+    height: 100px;
+    padding: 2%;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    resize: none;
+}
+.contact-section input[type="submit"]{
+    padding: 1% 2%;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+}
+/* End Contact Section */
+/* Start Footer */
+footer{
+    background-color: black;
+    padding: 1%;
+    text-align: center;
+}
+footer i{
+    color: #CCC;
+    font-size: 1.5rem;
+    margin: 1%;
+}
+/* End Footer */
