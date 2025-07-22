@@ -1,0 +1,46 @@
+/* Reset Style */
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+/* Variables */
+:root{
+  --main-color: #0c65ed;
+}
+/* Global Style */
+.top-25{
+  top: 25%;
+}
+.end-5{
+  right: 5%;
+}
+.bottom-5{
+  bottom: 5%;
+}
+/* Custom Style */
+/* Start Nav */
+nav ul li a:hover {
+  color: var(--main-color) !important;
+}
+/* End Nav */
+/* Start Slider Section */
+.carousel-indicators [data-bs-target]{
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 1px solid transparent;
+  margin: 10px;
+}
+.carousel-indicators [data-bs-target]:hover,
+.carousel-indicators [data-bs-target]:focus{
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.animate__animated.animate__backInRight {
+  --animate-duration: 1s;
+}
+/* End Slider Section */
+/* Animation */
+
