@@ -70,6 +70,10 @@
   left: 120%;
 }
 
+.section-padding {
+  padding: 5% 0;
+}
+
 /* Custom Style */
 /* Start Nav */
 nav ul li a:hover {
@@ -85,8 +89,7 @@ nav ul li a:hover {
   margin: 10px;
 }
 
-.carousel-indicators [data-bs-target]:hover,
-.carousel-indicators [data-bs-target]:focus {
+.carousel-indicators [data-bs-target]:hover {
   background-color: transparent;
   border: 1px solid white;
 }
@@ -96,4 +99,126 @@ nav ul li a:hover {
 }
 
 /* End Slider Section */
-/* Animation */
+/* Scroll Top Button */
+#scrollTopBtn {
+  position: fixed;
+  right: 40px;
+  bottom: 50px;
+  opacity: 0;
+  z-index: 999;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+#scrollTopBtn.active {
+  opacity: 1;
+}
+
+/* Start About Section */
+.about-text {
+  position: absolute;
+  background-color: white;
+  max-width: 370px;
+  top: 6px;
+  padding: 1rem 0.5rem;
+}
+
+.about-image {
+  text-align: end;
+}
+
+/* End About Section */
+/* Start Services Section */
+.services {
+  background-image: url(../Images/service-bg.jpg);
+  position: relative;
+  background-size: cover;
+  background-position: top;
+}
+
+.overlay::before {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.services-heading {
+  z-index: 10 !important;
+}
+
+.services i {
+  font-size: 60px;
+}
+
+.services .service:hover .overlay-text {
+  display: block !important;
+  top: 0 !important;
+}
+
+/* End Services Section */
+/* Start Work Section */
+.product {
+  transition-duration: 0.5s;
+}
+
+.work .filter-btn:hover,
+.work .filter-btn:focus {
+  color: var(--main-color);
+}
+
+.card {
+  transition-duration: 0.5s;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px;
+}
+
+.card-text {
+  width: 94%;
+  left: 3%;
+  bottom: 3%;
+  transition-duration: 0.5s;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+}
+
+.card:hover .card-text {
+  opacity: 1 !important;
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+}
+
+/* End Work Section */
+/* Start Team Section */
+.team-card{
+  transition-duration: 0.5s;
+}
+.team-card .team-card-text{
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+}
+.team-card:hover .title{
+  border: none !important;
+}
+.team-card:hover .hidden-text{
+  display: block !important;
+}
+.team-card .social-icons i{
+  transition-duration: 0.5s;
+}
+.team-card .social-icons i:hover{
+  color: black;
+}
+/* End Team Section */
