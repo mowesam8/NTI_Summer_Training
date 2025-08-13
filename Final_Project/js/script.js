@@ -1,3 +1,7 @@
+document.querySelector('.nav-link[href="index.html"]').addEventListener('click', function (e) {
+  window.location.href = 'index.html';
+});
+
 // Scroll Top Button
 var topBtn = document.getElementById('scrollTopBtn')
 var targetSection = document.getElementById('carouselExampleCaptions')
