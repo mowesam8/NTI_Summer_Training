@@ -16,6 +16,7 @@ window.addEventListener('scroll', () => {
 document.getElementById("scrollTopBtn").onclick = function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
+
 // Counter Start on Scroll
 let started = false;
 let counters = document.querySelectorAll(".num");
@@ -37,6 +38,18 @@ function startCount(el, duration) {
     }
   }, 10);
 }
+
+window.addEventListener("scroll", function () {
+  let sectionTop = section.offsetTop;
+  let screenHeight = window.innerHeight;
+  let scrollY = window.scrollY;
+
+  if (!started && scrollY + screenHeight >= sectionTop) {
+    counters.forEach(num => startCount(num, 2000));
+    started = true;
+  }
+});
+
 
 // our work filter 
 var filterBtns = document.querySelectorAll(".filter-btn");
@@ -115,7 +128,7 @@ $(document).ready(function () {
 });
 
 // Form Validation
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+document.getElementById("contactForm").addEventListener("submit", function (e) {
   e.preventDefault();
   let isValid = true;
 
