@@ -89,6 +89,31 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Testomnials
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    margin: 16,
+    nav: true,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      992: {
+        items: 2
+      }
+    },
+    navText: [
+      '<i class="fa-solid fa-arrow-left"></i>',
+      '<i class="fa-solid fa-arrow-right"></i>'
+    ],
+
+  });
+});
+
 // Form Validation
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
@@ -126,29 +151,3 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     this.submit();
   }
 });
-
-// Testomnials
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    margin: 16,
-    nav: true,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 2500,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      992: {
-        items: 2
-      }
-    },
-    navText: [
-      '<i class="fa-solid fa-arrow-left"></i>',
-      '<i class="fa-solid fa-arrow-right"></i>'
-    ],
-
-  });
-});
-
