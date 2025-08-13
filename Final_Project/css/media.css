@@ -80,3 +80,9 @@
     margin: 0 auto;
   }
 }
+
+@media(min-width: 768px) {
+  .blog-icons{
+    border-bottom-left-radius: 0.375rem;
+  }
+}
