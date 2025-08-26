@@ -172,23 +172,23 @@ nav ul li a:hover {
   transition-duration: 0.5s;
 }
 
-.work .filter-btn{
+.work-filter-btn{
   color: black;
 }
-.work .filter-btn:hover{
+.work-filter-btn:hover{
   color: var(--main-color);
   background-color: white;
 }
-.work .filter-btn:hover {
+.work-filter-btn:hover {
   color: var(--main-color);
 }
 
-.work .filter-btn.active {
+.work-filter-btn.active {
   background-color: var(--main-color);
   color: white;
 }
 
-.work .filter-btn.active:hover {
+.work-filter-btn.active:hover {
   background-color: var(--main-color);
   color: white;
 }

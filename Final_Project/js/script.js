@@ -16,7 +16,6 @@ window.addEventListener('scroll', () => {
 document.getElementById("scrollTopBtn").onclick = function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
-
 // Counter Start on Scroll
 let started = false;
 let counters = document.querySelectorAll(".num");
@@ -51,13 +50,13 @@ window.addEventListener("scroll", function () {
 });
 
 
-// our work filter 
-var filterBtns = document.querySelectorAll(".filter-btn");
+// Filters
+var workFilterBtns = document.querySelectorAll(".work-filter-btn");
 var products = document.querySelectorAll(".product");
 
-filterBtns.forEach(btn => {
+workFilterBtns.forEach(btn => {
   btn.addEventListener("click", () => {
-    filterBtns.forEach(b => b.classList.remove("active"));
+    workFilterBtns.forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
 
     const filter = btn.dataset.filter;
@@ -73,34 +72,33 @@ filterBtns.forEach(btn => {
   });
 });
 
-// Pricing section
-
 document.addEventListener("DOMContentLoaded", function () {
-  const filterBtns = document.querySelectorAll(".filter-btn");
+  const pricingFilterBtns = document.querySelectorAll(".pricing-filter-btn");
   const pricingBlocks = document.querySelectorAll(".pricing-cards");
+
   pricingBlocks.forEach(block => {
     block.style.display = (block.dataset.category === "month") ? "flex" : "none";
   });
 
-  filterBtns.forEach(btn => {
+  pricingFilterBtns.forEach(btn => {
     btn.addEventListener("click", function () {
       const filterValue = this.dataset.filter;
-      filterBtns.forEach(b => {
+
+      pricingFilterBtns.forEach(b => {
         b.classList.remove("btn-primary");
         b.classList.add("btn-outline-primary");
       });
+
       this.classList.remove("btn-outline-primary");
       this.classList.add("btn-primary");
+
       pricingBlocks.forEach(block => {
-        if (block.dataset.category === filterValue) {
-          block.style.display = "flex";
-        } else {
-          block.style.display = "none";
-        }
+        block.style.display = (block.dataset.category === filterValue) ? "flex" : "none";
       });
     });
   });
 });
+
 
 // Testomnials
 $(document).ready(function () {
